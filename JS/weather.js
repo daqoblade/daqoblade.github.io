@@ -1,4 +1,4 @@
-const API_KEY = process.env.VERYSECRETOPENWEATHERMAPAPIKEY
+const API_KEY = "54e63cb84894207096dff20f58a1a885"
 
 function onGeoGood(position) {
     const lat = position.coords.latitude;

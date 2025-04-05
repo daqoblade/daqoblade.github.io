@@ -21,8 +21,11 @@ function paintTodo(newTodo) {
     todos.push(newTodo)
     const li = document.createElement("li")
     li.id = newTodo.id
+    li.classList.toggle("dotpoints")
     const span = document.createElement("span")
     span.innerText = newTodo.text;
+    span.classList.toggle("text-box")
+    span.classList.toggle("dotpoints")
     const button = document.createElement("button")
     button.innerText = "🗑"
     button.addEventListener("click", deleteTodo)

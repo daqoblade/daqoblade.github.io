@@ -6,11 +6,11 @@ const images = [
 
 function chooseBackground() {
     const chosenImage = images[Math.floor(Math.random() * images.length)]
-    bgImage.src = `images/${chosenImage}`
-    prevChild = bgImage;
+    // bgImage.src = `images/${chosenImage}`
+    document.body.style.backgroundImage = `url(images/${chosenImage})`;
 }
 
-const bgImage = document.createElement("img");
-document.body.appendChild(bgImage)
+// const bgImage = document.createElement("img");
+// document.body.appendChild(bgImage)
 chooseBackground()
 setInterval(chooseBackground, 5000);
