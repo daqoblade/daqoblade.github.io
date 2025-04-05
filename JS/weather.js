@@ -11,7 +11,7 @@ function onGeoGood(position) {
 }
 
 function onGeoBad() {
-    alert("Where u at mate")
+    alert("Couldn't find your location.")
 }
 
 const weatherContainer = document.querySelector("#weather span:first-child")
