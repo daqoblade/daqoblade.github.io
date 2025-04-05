@@ -8,12 +8,14 @@ function onGeoGood(position) {
         weatherContainer.innerText = data.weather[0].main
         cityContainer.innerText = `at ${data.name}!`;
     });
+    weather.classList.toggle("hidden")
 }
 
 function onGeoBad() {
     alert("Couldn't find your location.")
 }
 
+const weather = document.querySelector("#weather")
 const weatherContainer = document.querySelector("#weather span:first-child")
 const cityContainer = document.querySelector("#weather span:last-child")
 navigator.geolocation.getCurrentPosition(onGeoGood, onGeoBad)
